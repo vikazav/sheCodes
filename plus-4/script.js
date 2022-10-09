@@ -44,11 +44,15 @@ function showTemperature(response) {
   let descriptionNow= response.data.weather[0].main;
   description.innerHTML = descriptionNow;
   cloudIcon.classList.remove("fa-sun");
+  cloudIcon.classList.remove("fa-cloud-rain");
   cloudIcon.classList.add("fa-cloud");
   if (descriptionNow === "Clear") {
     cloudIcon.classList.add("fa-sun");
     cloudIcon.classList.remove("fa-cloud");
-  } 
+  } else if (descriptionNow === "Rain") {
+    cloudIcon.classList.add("fa-cloud-rain");
+    cloudIcon.classList.remove("fa-cloud");
+  }
   
   let currentCity = response.data.name;
   cityNow.innerHTML = currentCity;

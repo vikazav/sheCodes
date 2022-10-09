@@ -27,7 +27,7 @@
 .current:hover {
    background-color: #1b5709;
 }
-.fa-cloud {
+.fa-cloud, .fa-cloud-rain {
    color: #3084eb;
    font-size: 60px;
 }
