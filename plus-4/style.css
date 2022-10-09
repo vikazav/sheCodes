@@ -14,12 +14,25 @@
    color: #fff;
    border: none;
    padding: 10px;
-   width: 100%;
+   width: 30%;
    border-radius: 5px;
    font-size: 20px;
 }
+.btn-search:hover {
+   background-color: #175baf;
+}
+.current {
+   background-color: #2a8a0d;
+}
+.current:hover {
+   background-color: #1b5709;
+}
 .fa-cloud {
    color: #3084eb;
+   font-size: 60px;
+}
+.fa-sun {
+   color: rgb(255, 210, 10);
    font-size: 60px;
 }
 .icon {
@@ -32,7 +45,7 @@
    color:#3084eb;
    font-size: 56px;
 }
-.clouds {
+.description {
    color:#3084eb;
    font-size: 50px;
 }
